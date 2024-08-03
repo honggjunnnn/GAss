@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Check login status
-    const protectedPages = ['index.html', 'my-cards.html', 'transactions.html', 'paynow.html', 'chart.html', 'anti-fraud.html'];
+    const protectedPages = ['index.html', 'wallet.html', 'transactions.html', 'paynow.html', 'chart.html', 'anti-fraud.html'];
     const currentPage = window.location.pathname.split('/').pop();
     if (protectedPages.includes(currentPage) && !sessionStorage.getItem('loggedIn')) {
         window.location.href = 'login.html';
